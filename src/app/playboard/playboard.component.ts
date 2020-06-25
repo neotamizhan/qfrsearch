@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {QfrItem} from '../qfrItem';
+import { QfrItem } from '../qfrItem';
 import { QfrService } from '../qfr.service';
 
 @Component({
