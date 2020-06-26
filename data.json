@@ -1,13 +1,15 @@
 [
     {
-        "episode_num": 1,
-        "date": "2020-03-26",
-        "movie": "KOVIL PURA",
-        "song": "Sangeethame",
-        "year": "1981",
-        "original_artists": ["Ilayaraja", "S.Janaki", "Vaali"],
-        "qfr_artists": ["Saindhavi Prakash"],
-        "episode_url": "https://www.youtube.com/watch?v=UJqEL3OLQMo",
-        "song_url": "https://www.youtube.com/watch?v=UJqEL3OLQMo"
-      }
+        "episode_num":1,
+        "date":"",
+        "movie":"",
+        "song":"",
+        "year":"",
+        "composer":"",
+        "lyricist":"",  
+        "originals":[],
+        "cover_artists":[],      
+        "episode_url":"",
+        "song_url":""
+    }
 ]
