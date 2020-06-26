@@ -13,13 +13,14 @@ export class PlayboardComponent implements OnInit {
 
   constructor(private qfrService: QfrService) { }
 
-  getEpisodes():void {
+  getEpisodes(): void {
     this.qfrService.getAllEpisodes()
     .subscribe(e => this.episodes = e);
   }
 
   ngOnInit() {
     this.getEpisodes();
+    console.log(this.episodes);
   }
 
 }

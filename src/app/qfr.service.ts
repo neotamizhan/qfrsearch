@@ -11,15 +11,16 @@ export class QfrService {
   episodes: QfrItem[];
   db: QfrItem[];
 
-  constructor() { 
-    this.db = (data as any).default; 
+  constructor() {
+    this.db = (data as any).default;
   }
 
   getAllEpisodes(): Observable<QfrItem[]> {
+    console.log('in all episodes');
     return of(this.episodes);
   }
 
-  getLatestEpisode(): Observable<QfrItem[]> {    
+  getLatestEpisode(): Observable<QfrItem[]> {
     const e = [];
     e.push(this.db[this.db.length - 1]);
     return of(e);
