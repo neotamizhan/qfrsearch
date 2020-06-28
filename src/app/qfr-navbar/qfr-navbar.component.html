@@ -15,7 +15,14 @@
 
   <div class="app-sidenav-content">
     <mat-toolbar color="primary">
-      <span>Contact Manager</span>
+      <mat-toolbar-row>
+        <h1>Quarantine from Reality</h1>
+        <span class="menu-spacer"></span>
+        <div>
+          <a mat-button [routerLink]="'/all'"> All Episodes </a>
+          <a mat-button [routerLink]="'/latest'"> Latest Episode </a>
+        </div>
+      </mat-toolbar-row>
     </mat-toolbar>
     <div class="wrapper">
       <router-outlet></router-outlet>

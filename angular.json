@@ -128,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "qfrsearch"
+  "defaultProject": "qfrsearch",
+  "cli": {
+    "analytics": "232b8e36-77a6-49cc-bbd7-83d9f5423686"
+  }
 }

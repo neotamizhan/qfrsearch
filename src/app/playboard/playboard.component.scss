@@ -3,7 +3,7 @@
   -webkit-box-orient: vertical;
   flex-direction: row;
   margin: 8px;
-  padding: 5px;
+  padding: 16px;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
 }
 
@@ -13,4 +13,12 @@
 
 .md-grid-list {
   margin: 8px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.content > mat-card {
+  width: 200px;
 }

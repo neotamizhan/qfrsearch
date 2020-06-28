@@ -1,5 +1,6 @@
-<div class="md-padding" layout="row" layout-wrap>
-<mat-card flex-sm="25" flex-gt-sm="30" flex="100" class="mat-card mat-focus-indicator" *ngFor="let item of episodes">
+<div class="content" fxLayout="row wrap" fxLayoutGap="16px grid">
+<div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%"  *ngFor="let item of episodes">
+<mat-card class="mat-elevation-z4">
   <mat-card-header>
     <mat-card-title>Song: {{item.song}}</mat-card-title>
     <mat-card-subtitle *ngIf="item.movie">Movie: {{item.movie}}, {{item.year}}</mat-card-subtitle>
@@ -12,4 +13,5 @@
     <a mat-button class="mat-focus-indicator mat-button mat-button-base" href="{{item.episode_url}}&t={{item.song_start}}" target="_blank">Start at the Song</a>
   </mat-card-actions>
 </mat-card>
+</div>
 </div>
