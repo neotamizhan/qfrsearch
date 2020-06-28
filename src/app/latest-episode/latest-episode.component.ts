@@ -4,8 +4,7 @@ import { QfrItem } from '../qfrItem';
 
 @Component({
   selector: 'app-latest-episode',
-  templateUrl: '../playboard/playboard.component.html',
-  styleUrls: ['../playboard/playboard.component.html']
+  templateUrl: '../playboard/playboard.component.html'
 })
 export class LatestEpisodeComponent implements OnInit {
 
@@ -15,9 +14,9 @@ export class LatestEpisodeComponent implements OnInit {
   getEpisodes(): void {
     this.qfrService.getLatestEpisode()
     .subscribe(e => this.episodes = e);
+    console.log("Latest" + JSON.stringify(this.episodes));
   }
 
-  
   ngOnInit() {
     this.getEpisodes();
   }

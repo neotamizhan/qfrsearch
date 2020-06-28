@@ -5,7 +5,7 @@ export interface QfrItem {
   song: string;
   year: string;
   original_artists: string[];
-  qfr_artists: string[];
+  cover_artists: string[];
   episode_url: string;
-  song_url: string;
+  song_start: number;
 }

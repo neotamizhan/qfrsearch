@@ -1,0 +1,4 @@
+<h3><span class="label label-primary">Cover Artists</span></h3>
+<mat-chip-list>
+  <mat-chip routerLink='/covers/{{artist[0]}}' *ngFor="let artist of covers">{{artist[0]}} : {{artist[1]}}</mat-chip>
+</mat-chip-list>

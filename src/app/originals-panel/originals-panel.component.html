@@ -1,1 +1,4 @@
-<p>originals-panel works!</p>
+<h3><span class="label label-primary">Original Artists</span></h3>
+<mat-chip-list>
+  <mat-chip routerLink='/originals/{{artist[0]}}' *ngFor="let artist of originals">{{artist[0]}} : {{artist[1]}}</mat-chip>
+</mat-chip-list>

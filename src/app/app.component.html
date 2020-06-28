@@ -1,1 +1,24 @@
-<app-latest-episode></app-latest-episode>
+<app-qfr-navbar></app-qfr-navbar>
+<mat-sidenav-container>
+
+  <mat-sidenav #sidenav mode="over">
+
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <h2> Title </h2>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-nav-list>
+      <app-originals-panel></app-originals-panel>
+      <mat-divider></mat-divider>
+      <app-covers-panel></app-covers-panel>
+    </mat-nav-list>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
