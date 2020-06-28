@@ -9,8 +9,8 @@
   </mat-card-header>
 
   <mat-card-actions>
-    <a mat-button class="mat-focus-indicator mat-button mat-button-base" href="{{item.episode_url}}" target="_blank">Watch Episode</a>
-    <a mat-button class="mat-focus-indicator mat-button mat-button-base" href="{{item.episode_url}}&t={{item.song_start}}" target="_blank">Start at the Song</a>
+    <a mat-button class="mat-focus-indicator mat-button mat-button-base" [href]="item.episode_url | safeUrl" target="_blank">Watch Episode</a>
+    <a mat-button class="mat-focus-indicator mat-button mat-button-base" [href]="item.episode_url + '&t=' + item.song_start | safeUrl" target="_blank">Start at the Song</a>
   </mat-card-actions>
 </mat-card>
 </div>

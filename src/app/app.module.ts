@@ -20,6 +20,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatCard, MatCardModule } from '@angular/material/card';
 import { MatChip, MatChipsModule } from '@angular/material/chips';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { SafeUrlPipe } from './safe-url-pipe';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     EpisodesByOriginalsComponent,
     CoversPanelComponent,
     EpisodesByCoversComponent,
-    QfrNavbarComponent
+    QfrNavbarComponent,
+    SafeUrlPipe
   ],
   imports: [
     BrowserModule,

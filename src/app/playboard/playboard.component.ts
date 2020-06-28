@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { QfrItem } from '../qfrItem';
 import { QfrService } from '../qfr.service';
+import { SafeUrl, DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-playboard',
@@ -10,7 +11,14 @@ import { QfrService } from '../qfr.service';
 export class PlayboardComponent implements OnInit {
   episodes: QfrItem[];
 
-  constructor(private qfrService: QfrService) { }
+  constructor(
+    public qfrService: QfrService,
+    private sanitizer: DomSanitizer
+    ) { }
+
+  cleanURL(oldURL: string ): SafeUrl {
+    return   this.sanitizer.bypassSecurityTrustResourceUrl(oldURL);
+  }
 
   getEpisodes(): void {
     this.qfrService.getAllEpisodes()
@@ -21,5 +29,6 @@ export class PlayboardComponent implements OnInit {
     this.getEpisodes();
     console.log(this.episodes);
   }
-
 }
+
+
